@@ -32,7 +32,7 @@ public class ball : MonoBehaviour
             yspeed = yspeed * -1; 
         }
 
-        if (collision.gameObject.CompareTag("verticalwall"))
+        else if (collision.gameObject.CompareTag("verticalwall"))
         {
             xspeed = xspeed * -1;       
         }
