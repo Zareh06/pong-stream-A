@@ -40,24 +40,6 @@ public class ballAndColligion : MonoBehaviour
         Yposition += yspeed * Time.deltaTime;
         transform.position = new Vector3(Xposition, Yposition, 0);
 
-        /*
-        if (this.transform.position.x >= 9f || this.transform.position.x <= -9f)
-        {
-            transform.position = new Vector3(0f, 0f, 0f);
-            Xposition = 0f;
-            Yposition = 0f;
-            if(Leftscore >= Topscore)
-            {
-               
-                xspeed = 0f;
-                yspeed = 0f;
-            }
-            else if (Rightscore >= Topscore) 
-            {
-                
-            }
-       
-        } */
 
     }
     private void OnTriggerEnter2D(Collider2D collision)

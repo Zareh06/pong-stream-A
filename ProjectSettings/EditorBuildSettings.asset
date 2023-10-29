@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/menue.unity
+    guid: f348616810daef1439913c43ab82d291
+  - enabled: 1
+    path: Assets/Scenes/pong2player.unity
+    guid: 012ec8be95b4ff645880a05a33ad2d38
   m_configObjects: {}

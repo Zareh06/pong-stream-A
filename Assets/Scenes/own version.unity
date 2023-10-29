@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5820d248fff085c40a0a57ba7a3c98f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
   leftOrRight: left
 --- !u!212 &188609608
 SpriteRenderer:
@@ -580,7 +580,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.4468, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 2.5, z: 1}
+  m_LocalScale: {x: 0.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5820d248fff085c40a0a57ba7a3c98f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
   leftOrRight: right
 --- !u!212 &208591299
 SpriteRenderer:
@@ -725,7 +725,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 2.5, z: 1}
+  m_LocalScale: {x: 0.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1368,8 +1368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Xposition: 0
   Yposition: 0
-  xspeed: 3
-  yspeed: 3
+  xspeed: 5
+  yspeed: 5
   scoreField: {fileID: 1776332603}
   Topscore: 10
 --- !u!1 &1776332601
