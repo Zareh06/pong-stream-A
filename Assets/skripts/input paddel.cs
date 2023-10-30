@@ -28,7 +28,8 @@ public class inputpaddel : MonoBehaviour
         if (leftOrRight == "left")
         {
             setKeyAndMovement(KeyCode.W, KeyCode.S);
-        }else if (leftOrRight == "right")
+        }
+        else if (leftOrRight == "right")
         {
             setKeyAndMovement(KeyCode.UpArrow, KeyCode.DownArrow);
         }
