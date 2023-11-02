@@ -5,19 +5,25 @@ using UnityEngine;
 
 public class inputpaddel : MonoBehaviour
 {
+    // speed and type of peddle
     public float speed = 3.0f;
     public string leftOrRight;
 
 
     // Start is called before the first frame update
+    // ket the paddle go up and down
     void setKeyAndMovement(KeyCode up, KeyCode down)
     {
+        //go up
         if (Input.GetKey(up))
         {
+            //speed up
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
+        // go down
         else if (Input.GetKey(down))
         {
+            // speed down 
             transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
     }
@@ -25,10 +31,12 @@ public class inputpaddel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // lest use W and S as play button
         if (leftOrRight == "left")
         {
             setKeyAndMovement(KeyCode.W, KeyCode.S);
         }
+        // right use UpArrow and DownArrow as play buttons
         else if (leftOrRight == "right")
         {
             setKeyAndMovement(KeyCode.UpArrow, KeyCode.DownArrow);
@@ -36,32 +44,4 @@ public class inputpaddel : MonoBehaviour
     }
 }
        
-        //if (leftOrRight == "Left")    
-        //{
-        //    if (Input.GetKey(KeyCode.W))
-        //    {
-        //        transform.Translate(Vector3.up * speed * Time.deltaTime);
-        //        Debug.Log("Yes W is pressed down");
-        //    }
-        //    else if (Input.GetKey(KeyCode.S))
-        //    {
-        //        transform.Translate(Vector3.down * speed * Time.deltaTime);
-        //        Debug.Log("Yes S is pressed down");
-        //    }
-        //} 
-        //if (leftOrRight == "Right") 
-        //{
-        //    if (Input.GetKey(KeyCode.UpArrow))
-        //    {
-        //        transform.Translate(Vector3.up * speed * Time.deltaTime);
-        //        Debug.Log("Yes W is pressed down");
-        //    }
-        //    else if (Input.GetKey(KeyCode.DownArrow))
-        //    {
-        //        transform.Translate(Vector3.down * speed * Time.deltaTime);
-        //        Debug.Log("Yes down arrow is pressed down");
-        //    }
-        //}
-      
-    //}
-//}
+
